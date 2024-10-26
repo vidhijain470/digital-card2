@@ -77,7 +77,7 @@ const Products = ({ products, whatsappNumber }) => {
   );
 
   return (
-    <ProductsContainer>
+    <ProductsContainer id="products-section">
       <h3>Our Products</h3>
       <SearchBar
         type="text"
@@ -91,7 +91,7 @@ const Products = ({ products, whatsappNumber }) => {
             <ProductImage src={product.imageUrl} alt={product.name} />
             <ProductName>{product.name}</ProductName>
             <EnquireButton
-              href={`https://wa.me/${whatsappNumber.replace("+", "")}?text=${encodeURIComponent(`Hello, I am interested in the ${product.name}.`)}
+              href={`https://wa.me/${whatsappNumber.replace("+", "")}?text=${encodeURIComponent(`Hello Deepak & Company, I am interested in the ${product.name}.`)}
 `}
               target="_blank"
               rel="noopener noreferrer"
