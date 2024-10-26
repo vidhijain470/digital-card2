@@ -7,7 +7,7 @@ function App() {
     logoUrl: "/path/to/logo.png", // Replace with actual path
     companyName: "Deepak & Company",
     phoneNumber: "011 - 41020515, 9911117718",
-    whatsappNumber: "9911117718", // No "+" sign
+    whatsappNumber: "+91 9911117718", // No "+" sign
     email: "deepak17718@gmail.com",
     locationUrl: "https://maps.google.com/?q=3564/24+Ravi+Raj+Market,+Gali+Hakim+Baqa,+Chawri+Bazar,+Delhi-110006",
     websiteUrl: "https://www.deepakcompany.com",
