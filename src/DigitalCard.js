@@ -196,7 +196,7 @@ const AboutSection = styled.div`
 `;
 
 const DigitalCard = ({ logoUrl, companyName, phoneNumber, whatsappNumber, email, locationUrl, address, aboutText }) => {
-  const whatsappMessage = "Hello, I would like to inquire about your products.";
+  const whatsappMessage = "Hello Deepak & Company, I would like to inquire about your products.";
   const whatsappLink = `https://wa.me/${whatsappNumber.replace("+", "")}?text=${encodeURIComponent(whatsappMessage)}`;
 
   return (
@@ -205,7 +205,7 @@ const DigitalCard = ({ logoUrl, companyName, phoneNumber, whatsappNumber, email,
       <CompanyName>{companyName}</CompanyName>
       <ButtonGrid>
         <ButtonWrapper>
-          <RoundButton href={`tel:${phoneNumber}`} title="Call Us">
+          <RoundButton href={`tel:${whatsappNumber}`} title="Call Us">
             <FaPhone />
           </RoundButton>
           <ButtonLabel>Call</ButtonLabel>
