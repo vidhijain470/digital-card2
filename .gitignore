@@ -1,0 +1,10 @@
+secrets.txt
+*.log    # Ignore all .log files
+/node_modules/   # Ignore the node_modules folder
+/dist/           # Ignore the dist folder
+**/*.temp   # Ignore all .temp files anywhere in the project
+# Ignore Mac system files
+.DS_Store
+# IDE configurations
+.vscode/
+.idea/
