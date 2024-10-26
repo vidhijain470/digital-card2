@@ -17,9 +17,8 @@ const CardContainer = styled.div`
 `;
 
 const Logo = styled.img`
-  width: 80px;
-  height: 80px;
-  border-radius: 50%;
+  width: 100px; // Set the width as desired
+  height: auto; // Maintain aspect ratio
   margin-bottom: 10px;
 `;
 
@@ -70,6 +69,10 @@ const AboutSection = styled.div`
 `;
 
 const DigitalCard = ({ logoUrl, companyName, phoneNumber, whatsappNumber, email, locationUrl, websiteUrl, shopUrl, address, aboutText }) => {
+  // Define the default message for WhatsApp
+  const whatsappMessage = "Hello Deepak & Company, I would like to inquire about your products.";
+  const whatsappLink = `https://wa.me/${whatsappNumber.replace("+", "")}?text=${encodeURIComponent(whatsappMessage)}`;
+
   return (
     <CardContainer>
       <Logo src={logoUrl} alt="Company Logo" />
@@ -78,7 +81,7 @@ const DigitalCard = ({ logoUrl, companyName, phoneNumber, whatsappNumber, email,
         <RoundButton href={`tel:${whatsappNumber}`} title="Call Us">
           <FaPhone />
         </RoundButton>
-        <RoundButton href={`https://wa.me/${whatsappNumber}`} target="_blank" rel="noopener noreferrer" title="WhatsApp Us">
+        <RoundButton href={whatsappLink} target="_blank" rel="noopener noreferrer" title="WhatsApp Us">
           <FaWhatsapp />
         </RoundButton>
         <RoundButton href={`mailto:${email}`} title="Email Us">
