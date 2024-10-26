@@ -1,7 +1,7 @@
 // src/App.js
 import React from 'react';
 import DigitalCard from './DigitalCard';
-import logo from './assets/logo.jpg';
+import logo from './assets/logo.png';
 
 function App() {
   const companyInfo = {
