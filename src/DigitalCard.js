@@ -153,7 +153,7 @@ import Products from './Products';
 import { Link } from 'react-scroll';
 import rubbersheet from './assets/rubbersheet.jpg';
 import hosepipe from './assets/hosepipe.jpg';
-import cuttingtools from './assets/cuttingtools.jpg';
+import cuttingtools from './assets/cuttingtools.png';
 
 // Add your product data here (e.g., product images and names)
 const productData = [
