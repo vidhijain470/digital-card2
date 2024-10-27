@@ -154,12 +154,13 @@ import { Link } from 'react-scroll';
 import rubbersheet from './assets/rubbersheet.jpg';
 import hosepipe from './assets/hosepipe.jpg';
 import cuttingtools from './assets/cuttingtools.png';
-
+import cumi from './assets/cumi.png';
 // Add your product data here (e.g., product images and names)
 const productData = [
   { imageUrl: rubbersheet, name: 'Rubber Sheet' },
   { imageUrl: hosepipe, name: 'Hose Pipe' },
   { imageUrl: cuttingtools, name: 'Cutting Tool' },
+  { imageUrl: cumi, name: 'Grinding Wheel & Emery Cloth' },
   // Add more products as needed
 ];
 
